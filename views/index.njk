@@ -1,0 +1,33 @@
+{% extends './layout.njk' %}
+{% block title %}
+    <title>首页</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+{% endblock %}
+{% block body %}
+    <div class="head">
+        {% include './test.njk' %}
+    </div>
+    
+    <p>Use</p>
+    <div v-for="(l, index) in list">[[l.name]]</div>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript">
+    var app = new Vue({
+        el: "#app",
+        data: {
+            list: [
+                {
+                    id: 0,
+                    name: 'name23'
+                },
+                {
+                    id: 1,
+                    name: 'name456'
+                }
+            ]
+        }
+    });
+    </script>
+{% endblock %}
