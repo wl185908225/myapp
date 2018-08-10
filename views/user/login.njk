@@ -1,13 +1,14 @@
-{% extends './layout/base.njk' %}
+{% extends '../layout/base.njk' %}
 {% block title %}
-    <title>首页</title>
+    <title>登录</title>
 {% endblock %}
 {% block body %}
     <div class="head">
-        {% include './layout/header.njk' %}
-        <div v-for="(l, index) in list">[[l.name]]</div>
-        {% include './layout/footer.njk' %}
+       login
     </div>
+    
+    <p>Use</p>
+    <div v-for="(l, index) in list">[[l.name]]</div>
 {% endblock %}
 
 {% block script %}

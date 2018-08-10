@@ -1,1 +1,2 @@
-#supervisor bin/www 热加载服务器(文件修改自动重启服务，需刷新页面)
+#npm install
+#测试环境：npm run auto  正式环境： npm run start

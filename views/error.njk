@@ -1,32 +1,18 @@
-{% extends './layout.html' %}
+{% extends './layout/base.njk' %}
 {% block title %}
-    <title>错误</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>资源错误</title>
+    <link rel="stylesheet" href="./css/style.css">
 {% endblock %}
 {% block body %}
     <div class="head">
-        {% include './test.html' %}
+        资源错误
     </div>
-    
-    <p>Use</p>
-    <div v-for="(l, index) in list">{{name}}</div>
 {% endblock %}
 {% block script %}
-    <script type="text/javascript">
-        var app = new Vue({
-            el: "#app",
-            data: {
-                list: [
-                    {
-                        id: 0,
-                        name: 'name'
-                    },
-                    {
-                        id: 1,
-                        name: 'name2'
-                    }
-                ]
-            }
-        })
+ <script type="text/javascript">
+    var app = new Vue({
+        el: "#app",
+        data: {}
+    });
     </script>
 {% endblock %}

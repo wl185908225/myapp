@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title %}
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="./css/lib/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/lib/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/lib/element-ui.css">
+    <link rel="stylesheet" type="text/css" href="./css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+<body>
+    <div id="app" v-cloak>
+        {% block body %}
+        {% endblock %}
+    </div>
+
+    <script type="text/javascript" src="./js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/lib/vue.min.js"></script>
+    <script type="text/javascript" src="./js/lib/toastr.min.js"></script>
+    <script type="text/javascript" src="./js/lib/element-ui.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    {% block script %}
+    {% endblock %}
+</body>
+</html>
